@@ -1,0 +1,36 @@
+<div class="login-seccion">
+    <div nz-row>
+        <div nz-col nzSpan="6" class="login-card">
+            <nz-card class="card-content">
+                <img
+                    nz-image
+                    width="250px"
+                    nzSrc="../../../../assets/images/app-logo.png"
+                    alt=""
+                />
+
+                <form nz-form [formGroup]="forma" class="login-form" (ngSubmit)="submitForm(forma.value)">
+                    <nz-form-item>
+                      <nz-form-control nzErrorTip="Por favor ingrese su correo!">
+                        <nz-input-group nzPrefixIcon="user">
+                          <input type="text" nz-input formControlName="email" placeholder="Email" />
+                        </nz-input-group>
+                      </nz-form-control>
+                    </nz-form-item>
+
+                    <nz-form-item>
+                      <nz-form-control nzErrorTip="Por favor ingrese su contraseña!">
+                        <nz-input-group nzPrefixIcon="lock">
+                          <input type="password" nz-input formControlName="password" placeholder="Password" />
+                        </nz-input-group>
+                      </nz-form-control>
+                    </nz-form-item>
+
+                    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" [disabled]="!forma.valid">Ingresar</button>
+          
+                    <a  routerLink="/auth/registro" >¿No tienes cuenta?</a>
+                </form>
+            </nz-card>
+        </div>
+    </div>
+</div>

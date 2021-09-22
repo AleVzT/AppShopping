@@ -1,0 +1,44 @@
+[nz-form] {
+    max-width: 600px;
+}
+
+button {
+    margin-left: 8px;
+}
+
+.login-card {
+    position: absolute;
+    top: 5rem;
+    left: 23rem;
+}
+
+.login-seccion {
+    background-image: url("../../../../assets/images/login-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.card-content {
+    width: 40rem;
+    text-align: center;
+}
+
+.login-form {
+    max-width: 300px;
+}
+
+.login-form-margin {
+    margin-bottom: 16px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}

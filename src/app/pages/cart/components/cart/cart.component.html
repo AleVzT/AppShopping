@@ -1,0 +1,41 @@
+<nz-collapse *ngIf="product_Cart.length != 0">
+    <nz-collapse-panel  *ngFor="let product of product_Cart"
+                        [nzHeader]="product.name"
+                        [nzActive]="true"
+                        [nzDisabled]="false"
+    >
+        <nz-space [nzSize]="12">
+            <img    *nzSpaceItem 
+                    nz-image
+                    width="150px"
+                    height="150px"
+                    nzSrc="../../../../../assets/images/product-img.png"
+                    alt=""
+            />
+            <p *nzSpaceItem style="margin:0;">
+               {{product.descripcion}}
+            </p>
+            <div *nzSpaceItem style="text-align: center;">
+                <nz-input-number    [(ngModel)]="valueDefault" 
+                                    [nzSize]="'large'" 
+                                    [nzMin]="1" 
+                                    [nzMax]="52" 
+                                    [nzStep]="1"
+                ></nz-input-number>
+                <nz-divider></nz-divider>
+                <button nz-button nzType="primary">Eliminar</button>
+            </div>
+        </nz-space>
+    </nz-collapse-panel>
+</nz-collapse>
+<div nz-row *ngIf="product_Cart.length != 0">
+    <div nz-col [nzSpan]="24" class="botton-area">
+        <button nz-button nzType="primary" class="button-compra" (click)="finishBuy()">Finalizar Compra</button>
+    </div>
+</div>
+<div class="noProducts" *ngIf="product_Cart.length == 0">
+    <span>¡Aun no has agregado productos a tu carrito!</span>
+    <div nz-col [nzSpan]="24" style="margin-top: 2.5rem;">
+        <button nz-button nzType="primary" class="button-compra" routerLink="/home">Ir al Listado de productos</button>
+    </div>
+</div>

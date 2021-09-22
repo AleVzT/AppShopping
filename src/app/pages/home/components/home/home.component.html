@@ -1,0 +1,27 @@
+<div style="background: #ECECEC;padding:30px;">
+    <div nz-row [nzGutter]="8">
+      <div nz-col [nzSpan]="8" *ngFor="let data of ProductList">
+        <nz-card>
+          <img
+                nz-image
+                width="100%"
+                height="100%"
+                nzSrc="../../../../../assets/images/product-img.png"
+                alt=""
+          />
+          <button class="card-shopping" nz-button nzType="primary" (click)="addToCart(data)" [nzSize]="'large'">
+            <i nz-icon nzType="shopping-cart"></i>
+          </button>
+          <nz-divider></nz-divider>
+          <div class="content-card">
+            <span class="name-product" >
+              {{data.name}}
+            </span>
+            <span class="desc-product">
+              {{data.descripcion}}
+            </span>
+          </div>
+        </nz-card>
+      </div>      
+    </div>
+</div>

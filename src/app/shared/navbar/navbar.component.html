@@ -1,0 +1,26 @@
+<div>
+  <ul nz-menu nzMode="horizontal">
+    <li nz-menu-item routerLinkActive="active">
+      <a routerLink="/home">
+        <i nz-icon nzType="home" nzTheme="outline"></i>
+        <label>Home</label>
+      </a>
+    </li>
+    <li nz-menu-item routerLinkActive="active">
+      <a routerLink="/cart">
+        <i nz-icon nzType="shopping-cart" nzTheme="outline"></i>
+        <label>Carrito</label>
+      </a>
+    </li>
+    <li nz-menu-item routerLinkActive="active">
+      <a routerLink="/buy">
+        <i nz-icon nzType="unordered-list" nzTheme="outline"></i>
+        <label>Mis Compras</label>
+      </a>
+    </li>
+    <li nz-menu-item class="boton-logout" (click)="logout()">
+        <label>Salir</label>
+        <i nz-icon nzType="logout" nzTheme="outline"></i>
+    </li>
+  </ul>
+</div>

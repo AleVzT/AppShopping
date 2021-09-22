@@ -1,0 +1,19 @@
+nz-input-number {
+    margin-right: 8px;
+}
+
+.button-compra {
+    margin-top: 1rem;
+}
+
+.botton-area {
+    text-align: right;
+}
+
+.noProducts {
+    font-size: 28px;
+    text-align: center;
+    top: 5rem;
+    position: relative;
+    font-weight: bold;
+}

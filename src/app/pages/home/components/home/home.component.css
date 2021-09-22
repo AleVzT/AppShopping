@@ -1,0 +1,12 @@
+.card-shopping {
+    float: left;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.name-product {
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}

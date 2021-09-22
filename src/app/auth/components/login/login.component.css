@@ -1,0 +1,61 @@
+
+.container {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.login-logo {
+    width: 200px;
+    height: 100px;
+}
+
+.card {
+    position: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+.login-card {
+    position: absolute;
+    height: -webkit-fill-available;
+}
+
+.login-seccion {
+    background-image: url("../../../../assets/images/login-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.warningMsj {
+    text-align: left;
+    color: red;
+    font-size: 12px;
+
+}
+
+.card-content {
+    width: 20rem;
+    height: 100%;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.login-form {
+    max-width: 300px;
+}
+
+.login-form-margin {
+    margin-bottom: 16px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}

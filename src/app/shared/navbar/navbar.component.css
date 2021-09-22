@@ -1,0 +1,13 @@
+.nav-left {
+    display: block;
+    position: absolute;
+}
+
+label {
+    padding: 0 1rem;
+}
+
+.boton-logout {
+    float: right;
+    left: -15%;
+}

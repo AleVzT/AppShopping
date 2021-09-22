@@ -1,0 +1,18 @@
+<h2 nz-typography style="text-align: center;">COMPRAS</h2>
+<div  *ngFor="let product of listOfData">
+    <nz-card nzType="inner" nzTitle="{{product.name}}">
+        <nz-space [nzSize]="12">
+            <img
+                *nzSpaceItem 
+                nz-image
+                width="150px"
+                height="150px"
+                nzSrc="../../../../../assets/images/product-img.png"
+                alt=""
+            />
+            <p *nzSpaceItem style="margin:0;">
+               {{product.descripcion}}
+            </p>
+        </nz-space>
+    </nz-card>
+</div>
